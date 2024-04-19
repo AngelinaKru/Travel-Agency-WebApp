@@ -31,10 +31,12 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-      <img src="/travel-bag.png" alt="logo" />
+      <img src="/images/logo-2.png" alt="logo" />
+      
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"}/>
+          
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
@@ -43,22 +45,22 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/beach" className="nav-links" onClick={closeMobileMenu}>
-                Rantaloma
+              <Link to="/products" className="nav-links" onClick={closeMobileMenu}>
+                Lomat
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/city" className="nav-links" onClick={closeMobileMenu}>
-              Kaupunkiloma
+              <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
+              Palvelut
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
-                Kirjaudu sisään
+              <Link to="/contact" className="nav-links-mobile" onClick={closeMobileMenu}>
+               Yhteystiedot
               </Link>
             </li>
             </ul>
-            {button && <Button buttonStyle="btn--outline">KIRJAUDU SISÄÄN</Button>}
+            {button && <Button buttonStyle="btn--outline">OTA YHTEYTTÄ</Button>}
       </div>
     </nav>
   );

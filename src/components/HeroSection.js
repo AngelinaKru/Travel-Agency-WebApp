@@ -1,18 +1,33 @@
-import React from 'react'
-import { Button } from './Button'
+import React from 'react';
+import '../App.css';
+import { Button } from './Button';
+import './HeroSection.css';
 
-const HeroSection = () => {
+function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src="https://www.youtube.com/watch?v=jeF-vkqKXBE" autoPlay loop muted />
-        <h1>SEIKKAILU ODOTTAA</h1>
-        <p>Matkusta tänään</p>
-        <div className='hero-btns'>
-          <Button className='btns' buttonStyle='btn--outline'
-          buttonSize='btn--large'>ALOITA MATKASI</Button>
-          </div>
+      <video src='video.mp4' autoPlay loop muted /> 
+      <h1>SEIKKAILU ODOTTAA</h1>
+      <p>Mitä odotat?</p>
+      <div className='hero-btns'>
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+        >
+          ALOITA SEIKKAILU
+        </Button>
+        <Button
+          className='btns'
+          buttonStyle='btn--primary'
+          buttonSize='btn--large'
+        // onClick={() => console.log('hey')} 
+        >
+          KATSO VIDEO <i className='far fa-play-circle' />
+        </Button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;
