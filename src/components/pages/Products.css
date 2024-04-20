@@ -1,0 +1,125 @@
+.products {
+  padding: 2rem;
+  background: #f9f9f9;
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center; 
+}
+
+.products h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007EA7;
+  font-size: 32px;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.products-item {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+.products h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007EA7;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.products .icons {
+  width: 30px;
+  margin-left: 10px; 
+}
+
+.products p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.image-row, .image-row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.wider-image {
+  width: 600px;
+  height: 320px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.narrow-image {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+@media screen and (max-width: 960px) {
+  .wider-image, .narrow-image {
+    width: 100%;
+  }
+  .products {
+    padding: 1rem;
+    background: #f9f9f9;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .products h1 {
+    text-align: center;
+    color: #007EA7;
+    font-size: 24px;
+  }
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0rem;
+  }
+  
+  .products-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+  }
+  
+  .products h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #007EA7;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .products .icons {
+    width: 20px;
+  }
+  
+  .products p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .image-row-2 {
+    display: none;
+  }
+} 

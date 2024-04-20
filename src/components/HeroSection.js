@@ -11,19 +11,18 @@ function HeroSection() {
       <p>Mitä odotat?</p>
       <div className='hero-btns'>
         <Button
-          className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          path={{ path: '/products' }}
         >
-          ALOITA SEIKKAILU
+          VALITSE LOMA
         </Button>
         <Button
-          className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-        // onClick={() => console.log('hey')} 
+          path={{ path: '/services' }}
         >
-          KATSO VIDEO <i className='far fa-play-circle' />
+          KATSO PAKETIT
         </Button>
       </div>
     </div>

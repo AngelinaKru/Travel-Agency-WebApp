@@ -19,6 +19,12 @@
   padding: 0 20px;
 }
 
+.navbar-name {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .navbar-logo {
   color: #fff;
   cursor: pointer;

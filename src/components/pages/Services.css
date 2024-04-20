@@ -1,0 +1,255 @@
+.service-content-2 h1 {
+  font-size: 32px;
+  color: #007EA7;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 50px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.service-item .vertical-line {
+  width: 4px;
+  height: 100%;
+}
+
+.service-item p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 10px;
+  text-align: center;
+}
+
+
+.service-item::before,
+.service-item::after {
+  content: '';
+  position: absolute;
+  width: calc(50% - 80px);
+  height: 1px;
+  background-color: #007EA7;
+  top: -10px;
+}
+
+.service-item::after {
+  top: auto;
+  bottom: -10px;
+}
+
+.service-content-2 {
+  position: relative;
+  height: 400px;
+}
+
+.service-content-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/images/trees-copy.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  max-width: 80%;
+  text-align: center;
+  z-index: 1;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.service-content-2 p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.service-table {
+  background-color: #ccc;
+  margin: 30px auto;
+  padding: 5px;
+}
+
+.service-table h2 {
+  font-size: 32px;
+  color: #007EA7;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.service-table td:first-child {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .service-content-2 {
+    height: 2%;
+  }
+
+  .service-content-2 h1 {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .full-text {
+    display: none;
+  }
+
+  .excerpt-text {
+    display: block;
+    width: 300px;
+  }
+
+  .service-content-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 10px;
+    background-image: url('/public/images/trees-copy.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+}
+
+/* Remaining styles for smaller devices */
+.service-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 50px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.service-item .vertical-line {
+  width: 4px;
+  height: 100%;
+}
+
+.service-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 10px;
+  text-align: center;
+}
+
+.service-item::before,
+.service-item::after {
+  content: '';
+  position: absolute;
+  width: calc(50% - 80px);
+  height: 1px;
+  background-color: #007EA7;
+  top: -10px;
+}
+
+.service-item::after {
+  top: auto;
+  bottom: -10px;
+}
+
+.service-content-2 {
+  position: relative;
+  height: 400px;
+}
+
+.service-content-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/images/trees-copy.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.overlay p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.service-content-2 p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.service-table {
+  background-color: #ccc;
+  margin: 30px auto;
+  padding: 5px;
+}
+
+.service-table h2 {
+  font-size: 26px;
+  color: #007EA7;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service-table td:first-child {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
