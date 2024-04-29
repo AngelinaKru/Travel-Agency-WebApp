@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css';
+import Footer from '../Footer';
 
 const Services = () => {
   return (
@@ -60,6 +61,7 @@ const Services = () => {
           </tbody>
         </table>
       </div>
+      <Footer />
     </>
   );
 }

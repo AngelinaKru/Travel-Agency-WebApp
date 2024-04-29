@@ -1,9 +1,11 @@
 import React from 'react';
 import './Contact.css';
+import Footer from '../Footer';
 
 const Contacts = () => {
   return (
-    <div className="contacts-container">
+    <> 
+     <div className="contacts-container">
       <h1>Yhteystiedot</h1>
       <p>Ota meihin yhteyttä alla olevilla yhteystiedoilla:</p>
       <div className="contact-info">
@@ -19,6 +21,9 @@ const Contacts = () => {
         </div>
       </div>
     </div>
+     <Footer />
+    </>
+  
   );
 }
 

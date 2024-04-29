@@ -1,5 +1,17 @@
 import React from 'react';
 import "./Products.css";
+import Footer from '../Footer';
+
+const Product = ({ title, iconSrc, altText, description }) => {
+  return (
+    <div className='products-item'>
+      <h2>{title}
+        <img src={iconSrc} alt={altText} className='icons' />
+      </h2>
+      <p>{description}</p>
+    </div>
+  );
+}
 
 const Products = () => {
   return (
@@ -8,32 +20,32 @@ const Products = () => {
         <h1>Lomat</h1>
         <div className='products-container'>
           <ul>
-            <div className='products-item'>
-              <h2>Kaupunkilomat 
-                <img src='/images/icon-city.png' alt='City' className='icons'/>
-              </h2>
-              <p>Tarjoamme unohtumattomia kaupunkilomia Suomen kauneimmissa kaupungeissa.</p>
-            </div>
-            <div className='products-item'>
-              <h2>Rantalomat
-                <img src='/images/icon-lake.png' alt='Lake' className='icons'/>
-              </h2>
-              <p>Nauti aurinkoisista hiekkarannoista ja meren läheisyydestä Suomen rannikolla.</p>
-            </div>
+            <Product
+              title="Kaupunkilomat"
+              iconSrc="/images/icon-city.png"
+              altText="City"
+              description="Tarjoamme unohtumattomia kaupunkilomia Suomen kauneimmissa kaupungeissa."
+            />
+            <Product
+              title="Rantalomat"
+              iconSrc="/images/icon-lake.png"
+              altText="Lake"
+              description="Nauti aurinkoisista hiekkarannoista ja meren läheisyydestä Suomen rannikolla."
+            />
           </ul>
           <ul>
-            <div className='products-item'>
-              <h2>Luontolomat
-                <img src='/images/icon-creek.png' alt='Creek' className='icons'/>
-              </h2>
-              <p>Tutustu Suomen upeaan luontoon ja villieläimiin unohtumattomalla luontolomalla.</p>
-            </div>
-            <div className='products-item'>
-              <h2>Hiihtolomat
-                <img src='/images/icon-ski.png' alt='Skiing' className='icons'/>
-              </h2>
-              <p>Koe unohtumaton hiihtoloma Suomen lumisissa maisemissa.</p>
-            </div>
+            <Product
+              title="Luontolomat"
+              iconSrc="/images/icon-creek.png"
+              altText="Creek"
+              description="Tutustu Suomen upeaan luontoon ja villieläimiin unohtumattomalla luontolomalla."
+            />
+            <Product
+              title="Hiihtolomat"
+              iconSrc="/images/icon-ski.png"
+              altText="Skiing"
+              description="Koe unohtumaton hiihtoloma Suomen lumisissa maisemissa."
+            />
           </ul>
         </div>
       </div>
@@ -45,6 +57,7 @@ const Products = () => {
         <img src='/images/lomat-ski.jpg' alt='Ski' className='narrow-image' />
         <img src='/images/lomat-city-2.jpg' alt='City 2' className='wider-image' />
       </div>
+      <Footer />
     </>
   );
 }
