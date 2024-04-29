@@ -6,25 +6,25 @@ const Services = () => {
   return (
     <>
       <div className="service-content-2">
-      <div className="overlay">
-      <h1>Palvelut</h1>
-        <p className='full-text'>
-        Tarjoamme täysin suunniteltuja matkapaketteja Suomeen, jotka sisältävät 
-        kuljetukset, majoituksen ja aktiviteetit, jotta voit nauttia matkastasi 
-        täysillä. Olipa kyseessä kaupunkiloma, luontoretki, risteily tai 
-        talviaktiviteetit, autamme sinua löytämään juuri sinulle sopivan paketin 
-        ja teemme matkan suunnittelun vaivattomaksi. Varaa matkapakettisi Suomeen 
-        ja nauti täysillä, oli se sitten kaupunkiloma, luontoretki, risteily tai talviaktiviteetti.
-        </p>
-        <p className='excerpt-text' display="none">
-        Suunnitellut matkapaketit Suomeen, kuljetuksilla, majoituksilla ja aktiviteeteilla. Valitse 
-        kaupunkiloma, luontoretki, risteily tai talviaktiviteetit helposti. Varaa matkasi nyt ja nauti täysillä!
-        </p>
+        <div className="overlay">
+          <h1>Palvelut</h1>
+          <p className='full-text'>
+            Tarjoamme täysin suunniteltuja matkapaketteja Suomeen, jotka sisältävät
+            kuljetukset, majoituksen ja aktiviteetit, jotta voit nauttia matkastasi
+            täysillä. Olipa kyseessä kaupunkiloma, luontoretki, risteily tai
+            talviaktiviteetit, autamme sinua löytämään juuri sinulle sopivan paketin
+            ja teemme matkan suunnittelun vaivattomaksi. Varaa matkapakettisi Suomeen
+            ja nauti täysillä, oli se sitten kaupunkiloma, luontoretki, risteily tai talviaktiviteetti.
+          </p>
+          <p className='excerpt-text' display="none">
+            Suunnitellut matkapaketit Suomeen, kuljetuksilla, majoituksilla ja aktiviteeteilla. Valitse
+            kaupunkiloma, luontoretki, risteily tai talviaktiviteetit helposti. Varaa matkasi nyt ja nauti täysillä!
+          </p>
         </div>
-        </div>
-        <div className="service-item">
+      </div>
+      <div className="service-item">
         <div className="vertical-line"></div>
-        <p>Varaa matkapaketti Suomeen, jotta voit nauttia täysin siemauksin, 
+        <p>Varaa matkapaketti Suomeen, jotta voit nauttia täysin siemauksin,
           oli se sitten kaupunkiloma, luontoretki, risteily tai talviaktiviteetti</p>
       </div>
       <div className="service-table">

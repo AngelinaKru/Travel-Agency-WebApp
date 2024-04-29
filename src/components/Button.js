@@ -6,7 +6,7 @@ const STYLES = ['btn--primary', 'btn--outline', 'btn--blue']; // Include 'btn--b
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-export const Button = ({children, type, onClick, buttonStyle, buttonSize, path}) => {
+export const Button = ({ children, type, onClick, buttonStyle, buttonSize, path }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 

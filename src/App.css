@@ -1,21 +1,12 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
-  @media screen and (max-width: 960px) {
-    body {
-      font-size: 24;
-    }
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 24;
   }
-  
-  /* .home {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: #fff; 
-  } */
+}
