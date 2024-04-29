@@ -5,20 +5,6 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <div className='footer-container'>
-            <section className='footer-subscription'>
-                <p className='footer-subscription-heading'>
-                    Liity Seikkailu-uutiskirjeeseen saadaksesi parhaat loma-tarjouksemme.
-                </p>
-                <p className='footer-subscription-text'>
-                    Voit peruuttaa tilauksen milloin tahansa.
-                </p>
-                <div className='input-areas'>
-                    <form>
-                        <input type='email' name='email' placeholder='Sähköposti' className='footer-input' />
-                        <button buttonStyle='btn--outline'>Tilaa</button>
-                    </form>
-                </div>
-            </section>
             <div className='footer-links'>
                 <div className='footer-link-wrapper'>
                     <div className='footer-link-items'>

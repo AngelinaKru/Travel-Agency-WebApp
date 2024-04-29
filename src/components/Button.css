@@ -39,3 +39,12 @@
     color: #242424;
     transition: all 0.3s ease-out;
 }
+
+.btn--blue {
+    background-color: #007EA7; 
+    color: #fff; 
+   font-size: 14px;
+    padding: 2px 10px; 
+    transition: all 0.3s ease-out;
+    margin: 10px;
+}

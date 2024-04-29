@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import Footer from '../Footer';
+import { Button } from '../Button';
 
 const Contacts = () => {
   return (
@@ -21,6 +22,20 @@ const Contacts = () => {
         </div>
       </div>
     </div>
+    <section className='contact-subscription'>
+                <p className='contact-subscription-heading'>
+                    Liity Seikkailu-uutiskirjeeseen saadaksesi parhaat loma-tarjouksemme.
+                </p>
+                <p className='contact-subscription-text'>
+                    Voit peruuttaa tilauksen milloin tahansa.
+                </p>
+                <div className='input-areas'>
+                    <form>
+                        <input type='email' name='email' placeholder='Sähköposti' className='footer-input' />
+                        <Button buttonStyle='btn--blue'>Tilaa</Button> 
+                    </form>
+                </div>
+            </section>
      <Footer />
     </>
   
